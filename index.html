@@ -6,35 +6,184 @@
 <title>Robotics in Japan</title>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
   background: #020617;
   color: white;
-  scroll-behavior: smooth;
 }
 
-/* NAVBAR */
 nav {
   position: sticky;
   top: 0;
-  background: rgba(15, 23, 42, 0.8);
-  backdrop-filter: blur(10px);
+  background: #0f172a;
   padding: 15px;
   text-align: center;
-  z-index: 1000;
 }
 
 nav a {
   color: #38bdf8;
-  margin: 0 15px;
+  margin: 10px;
   text-decoration: none;
-  font-weight: bold;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: #020617;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+h2 {
+  color: #38bdf8;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #0f172a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#about">About</a>
+  <a href="#types">Types</a>
+  <a href="#tech">Technology</a>
+  <a href="#uses">Uses</a>
+  <a href="#future">Future</a>
+  <a href="#team">Team</a>
+</nav>
+
+<header>
+  <h1>🤖 Robotics in Japan</h1>
+  <p>未来の技術 (Future Technology)</p>
+</header>
+
+<section id="about">
+  <h2>About Robotics</h2>
+  <p>
+    Robotics is a field that combines electronics, mechanical engineering, and computer science to build machines capable of performing tasks automatically.
+    Japan is one of the world leaders in robotics due to its advanced technology and aging population.
+  </p>
+</section>
+
+<section id="types">
+  <h2>Types of Robots</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Industrial_robot_KUKA.jpg">
+      <h3>Industrial Robots</h3>
+      <p>Used in factories for manufacturing cars and electronics.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Pepper_robot.jpg">
+      <h3>Service Robots</h3>
+      <p>Used in hotels and restaurants to assist customers.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ASIMO_4.28.11.jpg">
+      <h3>Humanoid Robots</h3>
+      <p>Robots designed to look and act like humans.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="tech">
+  <h2>Technology Behind Robots</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Ultrasonic_sensor.jpg">
+      <h3>Sensors (センサー)</h3>
+      <p>Help robots detect environment like distance, motion, and temperature.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Arduino_Uno.jpg">
+      <h3>Controllers</h3>
+      <p>Microcontrollers like Arduino act as the brain of the robot.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/DC_motor.jpg">
+      <h3>Actuators</h3>
+      <p>Motors that allow robots to move and perform actions.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="uses">
+  <h2>Applications in Japan</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Robot_hotel_japan.jpg">
+      <h3>Hospitality</h3>
+      <p>Robots are used in hotels for check-in and service.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Nursing_robot_japan.jpg">
+      <h3>Healthcare</h3>
+      <p>Assist elderly people in daily activities.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Factory_robotics.jpg">
+      <h3>Manufacturing</h3>
+      <p>Used in car and electronics industries.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="future">
+  <h2>Future of Robotics</h2>
+  <p>
+    Japan is focusing on AI-powered robots, smart cities, and autonomous systems.
+    In the future, robots will become part of everyday human life and assist in all industries.
+  </p>
+</section>
+
+<section id="team">
+  <h2>Our Team</h2>
+  <div class="grid">
+
+    <div class="card"><h3>Atulya</h3><p>Website Developer</p></div>
+    <div class="card"><h3>Anabia</h3><p>Content Creator</p></div>
+    <div class="card"><h3>Anushree</h3><p>Content Editor</p></div>
+    <div class="card"><h3>Sreshtha</h3><p>UI/UX Designer</p></div>
+    <div class="card"><h3>Ritika</h3><p>Content Strategist</p></div>
+
+  </div>
+</section>
+
+</body>
+</html>  font-weight: bold;
 }
 
 /* HERO */
