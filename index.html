@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robotics in Japan</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #020617;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+
+nav a {
+  color: #38bdf8;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HERO */
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(to bottom, #020617, #0f172a);
+}
+
+header h1 {
+  font-size: 3rem;
+  animation: fadeIn 2s ease;
+}
+
+header p {
+  margin-top: 10px;
+  color: #94a3b8;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #38bdf8;
+}
+
+/* CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #0f172a;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 25px #38bdf8;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* TEAM */
+.team {
+  text-align: center;
+}
+
+.team-card {
+  background: #0f172a;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+.team-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #22c55e;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#robots">Robots</a>
+  <a href="#future">Future</a>
+  <a href="#team">Team</a>
+</nav>
+
+<header>
+  <h1>🤖 Robotics in Japan</h1>
+  <p>未来の技術 (Future Technology)</p>
+</header>
+
+<section id="robots">
+  <h2>Types of Robots</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581090700227-1e8a6c7c6f59">
+      <h3>Industrial Robots</h3>
+      <p>Used in factories for automation and precision work.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581092919534-6c2c8e8d6a32">
+      <h3>Service Robots</h3>
+      <p>Used in hotels, restaurants, and public places.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581091215367-59ab6b1f21b0">
+      <h3>Humanoid Robots</h3>
+      <p>Designed to interact with humans like assistants.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="future">
+  <h2>Future of Robotics</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485">
+      <h3>AI Integration</h3>
+      <p>Robots becoming smarter with AI systems.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051">
+      <h3>Smart Cities</h3>
+      <p>Robots integrated into daily urban life.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+      <h3>Healthcare Robots</h3>
+      <p>Helping elderly and patients in Japan.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="team">
+  <h2>Our Team</h2>
+  <div class="grid team">
+
+    <div class="team-card">
+      <h3>Atulya</h3>
+      <p>💻 Website Developer</p>
+    </div>
+
+    <div class="team-card">
+      <h3>Anabia</h3>
+      <p>📝 Content Creator</p>
+    </div>
+
+    <div class="team-card">
+      <h3>Anushree</h3>
+      <p>✏️ Content Editor</p>
+    </div>
+
+    <div class="team-card">
+      <h3>Sreshtha</h3>
+      <p>🎨 UI/UX Designer</p>
+    </div>
+
+    <div class="team-card">
+      <h3>Ritika</h3>
+      <p>📊 Content Strategist</p>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
